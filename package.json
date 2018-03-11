@@ -1,0 +1,28 @@
+{
+  "name": "randomized-server",
+  "version": "0.0.1",
+  "description": "This will read a list of files currently on the server - or a JSON file, I haven't decided yet, and serve a random link.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikkithayer/node-sandbox.git"
+  },
+  "keywords": [
+    "lol"
+  ],
+  "author": "Nicole Thayer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nikkithayer/node-sandbox/issues"
+  },
+  "homepage": "https://github.com/nikkithayer/node-sandbox#readme"
+}
