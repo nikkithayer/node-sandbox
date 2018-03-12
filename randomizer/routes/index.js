@@ -17,6 +17,7 @@ module.exports = router;
 /*
   IMMEDIATE PROJECTS
 
-
+  keytext is a single route which pulls a JSON file of colors and phrases and loads one at random along with a randomized link, which can be keytext or index
+  
 
 */
