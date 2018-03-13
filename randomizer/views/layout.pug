@@ -3,5 +3,11 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    style(type='text/css').
+       a#word {
+          background: linear-gradient(to bottom, #{startColor} 0%,#{endColor} 100%);
+          color: #{text};
+        }
+
   body
     block content

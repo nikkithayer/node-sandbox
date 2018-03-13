@@ -1,0 +1,38 @@
+[
+  {
+    "phrase": "ONE ACT PLAY",
+    "colors": ["#ff0000","#00ff00"],
+    "text": "#000",
+    "blink": false
+  },
+  {
+    "phrase": "yup yup yup yup",
+    "colors": ["#FFFF00","#000000"],
+    "text": "#000",
+    "blink": false 
+  },
+  {
+    "phrase": "be my friend",
+    "colors": ["#00ffff"],
+    "text": "#000",
+    "blink": false 
+  },
+  {
+    "phrase": "seven cats",
+    "colors": ["#00ffff"],
+    "text": "#000",
+    "blink": false 
+  },
+  {
+    "phrase": "dig it",
+    "colors": ["#00ffff"],
+    "text": "#000",
+    "blink": false 
+  },
+  {
+    "phrase": "no",
+    "colors": ["#00ffff"],
+    "text": "#000",
+    "blink": false 
+  }
+]

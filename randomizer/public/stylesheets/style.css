@@ -1,9 +1,18 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  border: 5px solid red; }
+  padding: 0px;
+  margin: 0;
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-a {
-  color: #00B7FF; }
+a#word {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 5em;
+  font-weight: bold;
+  height: 100vh;
+  line-height: 100vh;
+  display: block;
+  background-color: blue;
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */

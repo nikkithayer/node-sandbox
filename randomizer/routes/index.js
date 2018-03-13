@@ -1,14 +1,21 @@
 var express = require('express');
 var router = express.Router();
+var phrases = require('../phrases.json');
+
+function returnPhrase(newPhrase){
+  return(newPhrase[Math.floor(Math.random()* newPhrase.length)]);
+}
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express yay', request: req, response: res, next: next });
 });
 
-/* GET home page. */
-router.get('/keytext', function(req, res, next) {
-  res.render('keytext', { title: 'Express yay', request: req, response: res, next: next });
+/* GET word - link is going to be changed to anything in server later */
+router.get('/word', function(req, res, next) {
+  var set = returnPhrase(phrases);
+  res.render('word', { phrase: set.phrase, startColor: set.colors[0], endColor: set.colors[set.colors.length-1],text: set.text, link: '/word' });
 });
 
 module.exports = router;
