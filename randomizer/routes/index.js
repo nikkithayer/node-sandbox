@@ -15,7 +15,11 @@ router.get('/', function(req, res, next) {
 /* GET word - link is going to be changed to anything in server later */
 router.get('/word', function(req, res, next) {
   var set = returnPhrase(phrases);
-  res.render('word', { phrase: set.phrase, startColor: set.colors[0], endColor: set.colors[set.colors.length-1],text: set.text, link: '/word' });
+  res.render('word', { phrase: set.phrase, startColor: set.colors[0], endColor: set.colors[set.colors.length-1],text: set.text, effect: set.effect, link: '/word' });
+});
+
+router.get('/jump', function(req, res, next) {
+  res.render('jump', {link: '/'});
 });
 
 module.exports = router;

@@ -1,38 +1,30 @@
 [
   {
     "phrase": "ONE ACT PLAY",
-    "colors": ["#ff0000","#00ff00"],
+    "colors": ["#ff0000"],
     "text": "#000",
-    "blink": false
+    "effect": "blink"
   },
   {
-    "phrase": "yup yup yup yup",
-    "colors": ["#FFFF00","#000000"],
-    "text": "#000",
-    "blink": false 
+    "phrase": "yea ok",
+    "colors": ["#090420","#110420"],
+    "text": "#000"
   },
   {
-    "phrase": "be my friend",
-    "colors": ["#00ffff"],
+    "phrase": "tell them",
+    "colors": ["#FFFF00", "#FF00CC"],
     "text": "#000",
-    "blink": false 
+    "effect": "gradient"
   },
   {
-    "phrase": "seven cats",
-    "colors": ["#00ffff"],
+    "phrase": "rid us of space bores",
+    "colors": ["#0C004A"],
     "text": "#000",
-    "blink": false 
-  },
-  {
-    "phrase": "dig it",
-    "colors": ["#00ffff"],
-    "text": "#000",
-    "blink": false 
+    "effect": "rotate"
   },
   {
     "phrase": "no",
-    "colors": ["#00ffff"],
-    "text": "#000",
-    "blink": false 
+    "colors": ["#FF6600"],
+    "text": "#000"
   }
 ]
