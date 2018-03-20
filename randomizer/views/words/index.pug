@@ -1,0 +1,16 @@
+extends ../layout
+
+block style
+  style(type='text/css').
+    a.word{
+      background: linear-gradient(to top, #{startColor} 0%,#{endColor} 100%);
+    }
+    a#gradient h1{
+      background: linear-gradient(to bottom, #{startColor} 0%,#{endColor} 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+block content
+  a.word(id=effect, href=link) 
+    h1= phrase

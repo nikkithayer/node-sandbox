@@ -27,19 +27,18 @@ a.word {
   a.word#rotate h1 {
     animation: rotate 10s ease-in-out infinite alternate; }
 
-div#jump {
-  padding-bottom: 100vh; }
-  div#jump img#bg {
-    display: block;
-    margin: 5vh auto;
-    height: 90vh; }
-  div#jump img#man {
-    position: fixed;
-    z-index: 2;
-    height: 28vh;
-    top: 33vh;
-    left: 28%;
-    animation: jump 3s ease-in 0s normal 1 forwards; }
+div#jump img#bg {
+  display: block;
+  margin: 5vh auto;
+  height: 90vh; }
+div#jump img#man {
+  position: fixed;
+  z-index: 2;
+  height: 28vh;
+  top: 33vh;
+  left: 28%;
+  animation: jump 3s ease-in 0s normal 1 forwards;
+  mix-blend-mode: multiply; }
 
 @keyframes jump {
   0% {

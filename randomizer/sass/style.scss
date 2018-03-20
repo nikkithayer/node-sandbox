@@ -33,7 +33,6 @@ a.word{
 }
 
 div#jump{ 
-  padding-bottom: 100vh;
   img#bg{
     display: block;
     margin: 5vh auto;
@@ -46,6 +45,9 @@ div#jump{
     top: 33vh;
     left: 28%;
     animation: jump 3s ease-in 0s normal 1 forwards;
+    mix-blend-mode: multiply;
+  }
+  #jump-holder{
   }
 }
 
