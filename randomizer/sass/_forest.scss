@@ -15,21 +15,15 @@
     width: 100%;
     text-align: center;
     background-color: #fff;
-    &:before{
-      background-color: #ccc;
-      content: '';
-      height: 50%;
-      width: 72px;
-      position: relative;
-      top: 0px;
-      left: 288px;
-      z-index: -1;
-    }
-    }
+  }
     #narration{
       font-size: 20px;
       text-align: center;
       padding: 30px;
       height: 120px;
     }
+}
+
+#heaven{
+  overflow: hidden;
 }
