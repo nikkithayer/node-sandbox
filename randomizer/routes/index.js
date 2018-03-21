@@ -24,6 +24,10 @@ router.get('/forest', function(req, res, next) {
   res.render('forest/', {link: '/'});
 });
 
+router.get('/forest/heaven', function(req, res, next) {
+  res.render('forest/heaven', {link: '/'});
+});
+
 router.get('/gentlemen', function(req, res, next) {
   res.render('gentlemen/', {link: '/'});
 });
