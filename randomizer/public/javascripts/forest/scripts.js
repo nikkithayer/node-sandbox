@@ -10,6 +10,7 @@ var forest = {
   height: 6
 }
 var position = calcSeed(forest.width,forest.height);
+var tigerPosition = {};
 
 buildForest();
 
@@ -35,7 +36,7 @@ $( window ).keydown(function( event ) {
   }
  buildForest(position);
  position.count++;
- console.log(position.count);
+ position.count > 10 && enterTiger();
 });
 
 function explode(){
@@ -51,6 +52,9 @@ function buildForest(){
       if(position.x == j && position.y == i){
         newForest = man;
       }
+      if(tigerPosition.x == j && tigerPosition.y == i){
+        newForest = tiger;
+      }      
       trees.push(tree);
       $("#trees").append(newForest);
     }
@@ -58,6 +62,11 @@ function buildForest(){
     trees = [];
     $("#trees").append("<BR>");
   }  
+}
+
+function enterTiger(){
+  tigerPosition = calcSeed(forest.width, forest.height);
+  $("#narration").text("oh no, a tiger!");
 }
   
 function calcSeed(width,height){
