@@ -1,4 +1,9 @@
 extends ../layout
 
+block append scripts
+  script(type='text/javascript', src='/javascripts/forest/scripts.js')
+
 block content
-  p forest
+  div#forest
+    div#trees
+    div#narration hello

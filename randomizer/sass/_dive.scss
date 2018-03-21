@@ -1,0 +1,18 @@
+div#jump{ 
+  img#bg{
+    display: block;
+    margin: 5vh auto;
+    height: 90vh;
+  }
+  img#man{
+    position: fixed;
+    z-index: 2;
+    height: 28vh;
+    top: 33vh;
+    left: 28%;
+    animation: jump 3s ease-in 0s normal 1 forwards;
+    mix-blend-mode: multiply;
+  }
+  #jump-holder{
+  }
+}
