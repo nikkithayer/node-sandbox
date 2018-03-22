@@ -32,6 +32,10 @@ router.get('/gentlemen', function(req, res, next) {
   res.render('gentlemen/', {link: '/'});
 });
 
+router.get('/threeD', function(req, res, next) {
+  res.render('threeD/', {link: '/'});
+});
+
 router.get('/words', function(req, res, next) {
   var set = returnPhrase(phrases);
   res.render('words/', { phrase: set.phrase, startColor: set.colors[0], endColor: set.colors[set.colors.length-1],text: set.text, effect: set.effect, link: '/' });
