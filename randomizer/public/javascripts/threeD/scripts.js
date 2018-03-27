@@ -1,27 +1,35 @@
+var bg;
+function preload() {
+  bg = loadImage('images/threeD/spaceman.jpg');
+}
 function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
-  img = loadImage('images/threeD/test.png');
 }
 
 function draw() {
-  background(255);
+  background(0);
+  texture(bg);
+  plane(windowWidth,windowHeight);
+
   var locX = mouseX - width / 2;
   var locY = mouseY - height / 2;
-//  ambientLight(30);
-  ambientLight(100);
+  ambientLight(25);
   pointLight(255, 255,255, locX, locY, 50);
   noStroke();
 
 if (mouseIsPressed) {
+  ambientLight(100);
+  specularMaterial(20);  
 //  rotateX(mouseX*0.1);
-  rotateY(mouseY*0.1);  
+//  rotateY(mouseY*0.1);  
 //    translate(0,0,mouseY*0.1);
-  specularMaterial(120,255,255);
+//  specularMaterial(120,255,255);
 }else{
-//  specularMaterial(20);  
-    specularMaterial(50,170,255); 
+  specularMaterial(20);  
+//    specularMaterial(50,170,255); 
 }
 
+  
   createBox(72,400,94,0);
   createSphere(41.5,100,420);
   createBox(452,30,100,480);
