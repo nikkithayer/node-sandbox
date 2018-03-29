@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  div.form-header
+      h2=errors
+      h2 Ask a question
+  form(method="post" action="posttest")
+    div.form-field
+      label(for="message") Message
+      textarea.input#message(name="message")
+    div.form-actions
+      button.btn(type="submit") Send

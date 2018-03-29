@@ -45,7 +45,7 @@ a.word {
     transform: rotateX(0deg); }
   to {
     transform: rotateX(360deg); } }
-#forest {
+.story-container {
   text-decoration: none;
   font-size: 72px;
   height: 100vh;
@@ -56,20 +56,17 @@ a.word {
   display: flex;
   justify-content: center;
   flex-direction: column; }
-  #forest #trees {
+  .story-container #main {
     padding: 0;
     margin: 0;
     width: 100%;
     text-align: center;
     background-color: #fff; }
-  #forest #narration {
+  .story-container #narration {
     font-size: 20px;
     text-align: center;
     padding: 30px;
     height: 120px; }
-
-#heaven {
-  overflow: hidden; }
 
 div#jump img#bg {
   display: block;

@@ -4,6 +4,9 @@ block append scripts
   script(type='text/javascript', src='/javascripts/forest/scripts.js')
 
 block content
-  div#forest
-    div#trees
+  div.story-container
+    div#main
     div#narration
+    
+  if(heaven=="true")
+    p you are in heaven

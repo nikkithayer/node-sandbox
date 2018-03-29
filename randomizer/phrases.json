@@ -6,12 +6,13 @@
     "effect": "blink"
   },
   {
-    "phrase": "yea ok",
-    "colors": ["#090420","#110420"],
-    "text": "#000"
+    "phrase": "athleisure",
+    "colors": ["#FFFF00", "#FF00CC"],
+    "text": "#000",
+    "effect": "gradient"
   },
   {
-    "phrase": "tell them",
+    "phrase": "attractive nuisance",
     "colors": ["#FFFF00", "#FF00CC"],
     "text": "#000",
     "effect": "gradient"
@@ -23,7 +24,7 @@
     "effect": "rotate"
   },
   {
-    "phrase": "no",
+    "phrase": "don't forget",
     "colors": ["#FF6600"],
     "text": "#000"
   }

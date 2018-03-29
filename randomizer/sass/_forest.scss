@@ -1,5 +1,5 @@
-#forest{
-  text-decoration: none;
+.story-container{
+   text-decoration: none;
   font-size: 72px;
   height: 100vh;
   line-height: 1.2;
@@ -8,22 +8,20 @@
   font-family: monospace;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  #trees{
+  flex-direction: column; 
+
+  #main{
     padding: 0;
     margin: 0;
     width: 100%;
     text-align: center;
     background-color: #fff;
   }
-    #narration{
-      font-size: 20px;
-      text-align: center;
-      padding: 30px;
-      height: 120px;
-    }
-}
 
-#heaven{
-  overflow: hidden;
+  #narration{
+    font-size: 20px;
+    text-align: center;
+    padding: 30px;
+    height: 120px;
+  }
 }

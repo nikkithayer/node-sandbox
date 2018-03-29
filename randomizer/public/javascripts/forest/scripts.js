@@ -5,7 +5,6 @@ var man = "🏃🏻";
 var tiger = "🐅";
 var caterpillar = "🐛";
 var dead = "👻";
-var fog = "🌫";
 var moveCount = 0;
 var forest = {
   elements: [],
@@ -15,24 +14,7 @@ var forest = {
 var position = calcSeed(forest.width,forest.height);
 var tigerPosition = {};
 
-var narration = ["welcome to the forest","there’s a lot to see here",
-"",
-"",
-"trees, mostly. i wasn’t being completely honest with you when I said there was a lot to see.",
-"look, a caterpillar! i guess there is a lot to see in the forest. i was underselling it before.",
-"hey big guy.",
-"",
-"",
-"really, though, it's mostly trees",
-"oh, and a tiger. should have mentioned that.",
-"anyway it's hungry. it's probably gonna eat you.",
-"sorry about the tiger. really.",
-"...",
-"",
-"okay i said before the tiger was probably gonna eat you? it's definitely gonna eat you.",
-"that's just how it goes sometimes. there's no goal here, btw. sometimes tigers just show up and eat you.",
-"",
-"really, though. sorry about the tiger."];
+var narration = ["welcome to the forest","there’s a lot to see here","","","trees, mostly. i wasn’t being completely honest with you when I said there was a lot to see.","look, a caterpillar! i guess there is a lot to see in the forest. i was underselling it before.","hey big guy.","","","really, though, it's mostly trees","oh, and a tiger. should have mentioned that.","anyway it's hungry. it's probably gonna eat you.","sorry about the tiger. really.","...","","okay i said before the tiger was probably gonna eat you? it's definitely gonna eat you.","that's just how it goes sometimes. there's no goal here, btw. sometimes tigers just show up and eat you.","","really, though. sorry about the tiger."];
 
 buildForest();
 
@@ -76,12 +58,12 @@ function moveTiger(){
 
 function buildForest(){
   if(man == dead){
-   $("#narration").html("<a href='forest/heaven'>welcome to heaven</a>");            
+   $("#narration").html("<a href='forest/heaven'>welcome to heaven</a>");           
   }else{
    $("#narration").text(narration[position.count]);    
   }
    position.count++;
-  $("#trees").html("");
+  $("#main").html("");
   var trees = [];
   for(i=0; i<forest.height; i++){
     for(j=0; j<forest.width; j++){
@@ -100,11 +82,11 @@ function buildForest(){
           newForest = tiger;        
         }
       }      
-      $("#trees").append(newForest);
+      $("#main").append(newForest);
     }
     forest.elements.push(trees);
     trees = [];
-    $("#trees").append("<BR>");
+    $("#main").append("<BR>");
   }  
 }
 
